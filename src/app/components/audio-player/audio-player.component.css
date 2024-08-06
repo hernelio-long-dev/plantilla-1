@@ -1,0 +1,13 @@
+.reproductor{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+img {
+    width: 40px;
+}
+
+.icono-corazon {
+   padding: 0px 20px;
+}

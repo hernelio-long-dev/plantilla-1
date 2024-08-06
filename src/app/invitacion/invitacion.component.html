@@ -1,0 +1,171 @@
+
+<app-landing (landingFinish)="eventEmited($event)" [name]="nombreInvitado"></app-landing>
+<div class="showBackground" [ngStyle]="{'z-index': indice}">
+    <app-background></app-background>
+    <div class="info-container">
+        <div class="imagen-header">
+            <img src="assets/flores-header.png" class="fondo" alt="Imagen descriptiva">
+        </div>
+        <div class="title">¡Nos Casamos!</div>
+        <div class="novia">Sugehidyli</div>
+        <div class="y">&</div>
+        <div class="novio">Hernelio</div>
+        <div class="musica">
+            Presiona el <img src="assets/corazon.png"> para escuchar nuestra canción
+        </div>
+        <div class="linea"></div>
+        <app-audio-player></app-audio-player>
+        <div class="imagen-centro">
+            <img src="assets/imagen1.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="texto-1">
+            El amor nunca se da por vencido, jamás pierde la fe, siempre tiene esperanza y se mantiene firme en toda circunstancia.
+        </div>
+        <div class="versiculo">1 corintios 13:7</div>
+        <div class="icon1">
+            <img src="assets/icono-1.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="text-2">
+            Con la bendición de Dios y nuestros queridos padres
+        </div>
+        <div class="novia-padres">Padres de la novia</div>
+        <div class="nombre-padres">Aritzely Tejada <br> Alexsandro Valdes</div><br>
+        <div class="novia-padres">Padres de la novia</div>
+        <div class="nombre-padres">Mimi Sipu Lopez <br> Adolfo Long</div>
+        <div class="imagen-centro">
+            <img src="assets/imagen1.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="icon1" style="width: 60px;">
+            <img src="assets/anillo.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="nombre-invitacion">
+            {{nombreInvitado}}
+        </div>
+        <div class="info-invitado">
+            Tenemos el agrado de invitarte a Nuestra Boda
+        </div>
+        <div class="icon-fecha">
+            <img src="assets/fecha.svg" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="faltan">
+            Faltan...
+        </div>
+        <div class="contador">{{getTimeRemaining()}} </div>
+        <div class="icon1" style="width: 60px; margin-top: 30px;">
+            <img src="assets/iglesia.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="info-invitado" style="padding-top: 10px;">
+            Ceremonia Religiosa
+        </div>
+        <div class="hora">Hora: 4:00 p.m.</div>
+        <div class="direccion1">La Siesta, Tocumen</div>
+        <div class="direccion2">Calle San Felix, Casa #1234</div>
+        <a href="https://maps.app.goo.gl/viGdv9fqLjb1yjVg6?g_st=com.google.maps.preview.copy" target="_blank">
+            <div class="icon1" style="width: 100px; margin-top: 6px;">
+                <img src="assets/mapa.png" class="fondo" alt="Imagen descriptiva"> 
+            </div>
+        </a>
+        <div class="imagen-centro">
+            <img src="assets/imagen1.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="info-invitado" style="padding-top: 10px;">
+            Dress Code
+        </div>
+        <div class="novia-padres">Elegante</div>
+        <div class="icon1" style="width: 70px; margin-top: 8px;">
+            <img src="assets/elegante.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="direccion1">Prepárense para una boda llena de colores,</div>
+        <div class="direccion1">dejen el blanco para la novia</div>
+        <div class="info-invitado" style="padding-top: 30px;">
+            Itinerario
+        </div>
+        <div class="icon1" style="width: 350px; margin-top: 8px;">
+            <img src="assets/itinerario.svg" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="imagen-centro">
+            <img src="assets/imagen1.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="icon1" style="width: 60px;">
+            <img src="assets/regalo.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="info-invitado" style="padding-top: 10px; padding: 0px 40px;">
+            Regalos
+        </div>
+        <div class="direccion1">El mejor es que estés presente en este día tan esperado, pero si deseas hacernos un obsequio tenemos estas opciones:</div>
+        <div class="obsequio" style="padding-top: 10px;">
+            <div class="novia-padres" style="padding-right: 20px;">Yappy</div>
+            <div class="novia-padres">Efectivo</div>
+        </div>
+        <div class="obsequio">
+            <div class="icon1" style="width: 60px; padding-right: 20px; margin-top: 4px;">
+                <img src="assets/yappy.png" class="fondo" alt="Imagen descriptiva"> 
+            </div>
+            <div class="icon1" style="width: 60px; margin-top: -1px;"> 
+                <img src="assets/efectivo.png" class="fondo" alt="Imagen descriptiva"> 
+            </div>
+        </div>
+        <div class="icon1" style="width: 60px; margin-top: 35px;">
+            <img src="assets/buzon.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="info-invitado" style="padding-top: 10px; padding: 0px 40px;">
+            Buzón de deseos
+        </div>
+        <div class="direccion1">Nos encantaría leer tus buenos deseos. <br> ¡Déjanos un mensaje que recordaremos por siempre! </div>
+        <a href="https://forms.gle/4z4xwykyS12jD22Q9" target="_blank">
+            <div class="icon1" style="width: 100px; margin-top: 6px;">
+                <img src="assets/click.png" class="fondo" alt="Imagen descriptiva"> 
+            </div>
+        </a>
+        <div class="icon1" style="width: 60px; margin-top: 35px;">
+            <img src="assets/sugerencia.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="info-invitado" style="padding-top: 10px; padding: 0px 40px;">
+            sugerencia de canciones
+        </div>
+        <div class="direccion1">¿Cuáles son esas canciones que no pueden faltar en nuestra boda?. <br> ¡Comparte tus favoritas con nosotros! </div>
+        <a href="https://forms.gle/4z4xwykyS12jD22Q9" target="_blank">
+            <div class="icon1" style="width: 100px; margin-top: 6px;">
+                <img src="assets/musica-buzon.png" class="fondo" alt="Imagen descriptiva"> 
+            </div>
+        </a>
+        <div class="imagen-centro">
+            <img src="assets/imagen1.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="info-invitado" style="padding-top: 20px; padding-bottom: 0px;">
+            Pases
+        </div>
+        <div class="direccion1">Hemos reservado</div>
+        <div class="icon1" style="width: 80px; margin-top: 2px;">
+            <img [src]="srcPase" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="direccion1">Lugar en su honor</div>
+        <div class="info-invitado" style="padding-top: 30px; padding-bottom: 0px;">
+            No niños
+        </div>
+        <div class="direccion1">Amamos a los niños pero hemos <br>reservado sitios solo para adultos. <br> Niños, dulces sueños.</div>
+        <div class="info-invitado" style="padding-top: 30px;">
+            Confirmar asistencia
+        </div>
+        <div class="direccion1">Tu presencia es muy importante para <br> nosotros, por favor confirmanos tu <br> tu asistencia hasta el 02 de Noviembre</div>
+        <div class="obsequio">
+            <div class="icon1" style="width: 100px; padding-right: 20px; margin-top: 4px;" (click)="whatsAppHernelio()">
+                <img src="assets/cel-hernelio.svg" class="fondo" alt="Imagen descriptiva"> 
+            </div>
+            <div class="icon1" style="width: 100px; padding-right: 20px; margin-top: 4px;" (click)="whatsAppSuge()">
+                <img src="assets/cel-suge.svg" class="fondo" alt="Imagen descriptiva"> 
+            </div>
+        </div>
+        <div class="imagen-centro">
+            <img src="assets/imagen1.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="icon1" style="width: 100px;">
+            <img src="assets/final.png" class="fondo" alt="Imagen descriptiva"> 
+        </div>
+        <div class="direccion1">Con mucha ilusión queremos vivir este<br>momento rodeados de personas que han<br>formado parte de nuestra historia.<br>Será un honor contar con tu presencia.</div>
+        <div class="title">¡Te esperamos!</div>
+        <div style="margin-bottom: 8px;">
+            <img src="assets/flower-down.png" class="fondo" alt="Imagen descriptiva">
+        </div>
+    </div>
+</div>

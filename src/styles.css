@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+  @font-face {
+    font-family: 'GreatVibes';
+    src: url('assets/fonts/GreatVibes.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RokkittSemiBoldItalic';
+    src: url('assets/fonts/Rokkitt-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'RokkittSemiBold';
+    src: url('assets/fonts/Rokkitt-SemiBold.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Rokkitt';
+    src: url('assets/fonts/Rokkitt.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+  }

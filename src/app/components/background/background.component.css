@@ -1,0 +1,158 @@
+.background-container{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #e6e6fab5;
+        z-index: -5;
+      
+}
+
+.background-container .fondo{
+    position: absolute;
+    width: 100%;
+    top: -85px;
+}
+
+.corazon {
+    margin-left: 100px;
+     position: absolute;
+      bottom: -100px;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      transform: rotate(-45deg);
+    animation: rise 5s infinite ease-in;
+    z-index: -5;
+
+  }
+  
+  @keyframes rise{
+   0% {
+          transform: translateY(0) rotate(-45deg) scale(1);
+          opacity: 1;
+      }
+      100% {
+          transform: translateY(-100vh) rotate(-45deg) scale(1.5);
+          opacity: 0;
+      }
+  }
+  
+  .corazon:before,
+  .corazon:after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: red;
+      border-radius: 50%;
+  }
+  
+  .corazon:before {
+      top: -12px;
+      left: 0;
+  }
+  
+  .corazon:after {
+      left: 12px;
+      top: 0;
+  }
+
+  .corazon:nth-child(1) {
+    left: 0%;
+    animation-duration: 4s;
+    animation-delay: 1s;
+}
+
+.corazon:nth-child(2) {
+    left: 40%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.corazon:nth-child(3) {
+    left: 60%;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+.corazon:nth-child(4) {
+    left: 80%;
+    animation-duration: 7s;
+    animation-delay: 4s;
+}
+
+.corazon:nth-child(5) {
+    left: 50%;
+    animation-duration: 8s;
+    animation-delay: 0s;
+}
+
+
+/* 
+.background-container .rosa-left{
+    position: absolute;
+    z-index: 100;
+    width: 54%;
+    height: auto;
+    top: 25%;
+    margin-left: -29px;
+}
+
+.background-container .rosa-rigth{
+    position: absolute;
+    z-index: 100;
+    width: 54%;
+    height: auto;
+    top: 25%;
+    right: 0;
+    margin-right: -29px;
+}
+
+.background-container .couple{
+    position: absolute;
+    width: 100%;
+    height: 65%;
+    top: 0;
+} */
+
+@media only screen and (min-width: 500px) {
+    .background-container{
+        width: 500px;
+    }
+}
+
+/* @media (max-width: 2000px) {
+    .background-container{
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 1199.98px) { 
+    .background-container{
+        width: 70%;
+    }
+ }
+
+@media (max-width: 991.98px) {
+    .background-container{
+        width: 75%;
+    }
+ }
+
+
+@media (max-width: 767.98px) {
+    .background-container{
+        width: 90%;
+    }
+ }
+
+
+@media (max-width: 575.98px) {
+    .background-container{
+        width: 100%;
+    }
+ } */

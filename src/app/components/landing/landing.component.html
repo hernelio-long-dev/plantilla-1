@@ -1,0 +1,27 @@
+<div class="book" [ngClass]="{'open': isClassAdded }">
+    <div class="cover">
+        <!-- <button (click)="toggleClass()">Añadir Clase</button> -->
+            <div class="wrapper" [ngClass]="{'visibility': isClassAdded }">
+                <div class="nombre">{{nombre | titlecase}}</div>
+            <div class="description">Nos complace invitarte a nuestra boda</div>
+                <button (click)="toggleClass()">
+                  Abrir Invitación! 
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+            </div>  
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+            <div [ngClass]="{'visibility': isClassAdded }" class="corazon"></div>
+    </div>
+    
+</div>
